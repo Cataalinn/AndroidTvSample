@@ -9,7 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/domain.tomatoes" />
+            <option value="$PROJECT_DIR$/domain.vine" />
             <option value="$PROJECT_DIR$/mobile" />
             <option value="$PROJECT_DIR$/tv" />
           </set>
@@ -17,7 +18,8 @@
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/domain.tomatoes" />
+            <option value="$PROJECT_DIR$/domain.vine" />
             <option value="$PROJECT_DIR$/mobile" />
             <option value="$PROJECT_DIR$/tv" />
           </set>

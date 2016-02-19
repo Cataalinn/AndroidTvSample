@@ -8,6 +8,8 @@ import android.support.v17.leanback.widget.ArrayObjectAdapter;
 import android.support.v17.leanback.widget.HeaderItem;
 import android.support.v17.leanback.widget.ListRow;
 import android.support.v17.leanback.widget.ListRowPresenter;
+import android.support.v17.leanback.widget.Presenter;
+import android.support.v17.leanback.widget.PresenterSelector;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Toast;
@@ -16,6 +18,7 @@ import com.servicesample.androidtvsample.Fragment.Adapter.GridItemPresenter;
 import com.servicesample.androidtvsample.Fragment.Adapter.MovieAdapter;
 import com.servicesample.androidtvsample.Fragment.Adapter.MovieCardPresenter;
 import com.servicesample.androidtvsample.Fragment.Adapter.MovieList;
+import com.servicesample.androidtvsample.Fragment.Presenter.IconHeaderItemPresenter;
 import com.servicesample.androidtvsample.R;
 
 import java.util.Collections;
@@ -48,6 +51,8 @@ public class MainTvFragment extends BrowseFragment {
             }
         });
     }
+
+
 
     private void prepareBackgroundManager() {
         BackgroundManager mBackgroundManager = BackgroundManager.getInstance(getActivity());
@@ -91,6 +96,13 @@ public class MainTvFragment extends BrowseFragment {
             HeaderItem header = new HeaderItem(i, MovieList.MOVIE_CATEGORY[i]);
             mRowsAdapter.add(new ListRow(header, listRowAdapter));
         }
+
+        setHeaderPresenterSelector(new PresenterSelector() {
+            @Override
+            public Presenter getPresenter(Object item) {
+                return new IconHeaderItemPresenter();
+            }
+        });
 
         HeaderItem gridHeader = new HeaderItem(i, "PREFERENCES");
 
