@@ -9,4 +9,6 @@ For both apis i created 2 different modules who contains backend. Them are creat
 
 Mobile and Tv sides have Dagger2 implementations to instantiate Models, Presenters and what they need.
 
+For now,  mobile side is working. Videos are played into a SurfaceView for better rendering.
+
 @UnderDevelopment
