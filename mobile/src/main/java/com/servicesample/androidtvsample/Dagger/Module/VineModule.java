@@ -1,9 +1,7 @@
-package com.nodomain.vinedomain.Dagger.Module;
-
-import android.provider.SyncStateContract;
+package com.servicesample.androidtvsample.Dagger.Module;
 
 import com.nodomain.vinedomain.API.VineAPI;
-import com.nodomain.vinedomain.Dagger.Annotation.VineAnnotation;
+import com.servicesample.androidtvsample.Dagger.Annotation.VineAnnotation;
 import com.nodomain.vinedomain.Interface.IVineCallBack;
 import com.nodomain.vinedomain.Manager.Constants;
 import com.nodomain.vinedomain.Model.Interface.IVineModel;
@@ -23,7 +21,7 @@ import retrofit.RxJavaCallAdapterFactory;
 /**
  * Created by Florescu George Cătălin on 19.02.2016.
  * Project name:  AndroidTvSample
- * Package name: com.nodomain.vinedomain.Dagger.Module
+ * Package name: com.servicesample.androidtvsample.Dagger.Module
  */
 @Module
 public class VineModule {

@@ -1,18 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.neenbedankt.android-apt'
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
-    }
-}
-
-repositories {
-    mavenCentral()
-}
 
 android {
     compileSdkVersion 23
@@ -35,11 +21,6 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-
-    // dagger
-    compile 'com.google.dagger:dagger:2.0.1'
-    apt 'com.google.dagger:dagger-compiler:2.0.1'
-    provided 'org.glassfish:javax.annotation:10.0-b28'
 
     // retrofit
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'

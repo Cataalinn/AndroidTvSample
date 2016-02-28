@@ -1,1 +1,1 @@
-include ':mobile', ':tv', ':domain.tomatoes', ':domain.vine'
+include ':mobile', ':tv', ':domain.tomatoes', ':domain.vine', ':videocaching'
